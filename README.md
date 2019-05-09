@@ -34,5 +34,4 @@ zh-mix-target is the extended target-side language sentences.
 cat input-language-ja-file output-language-ja-file > train-ja-mixed-source
 cat input-language-zh-file zh-mix-target > train-zh-extended-target
 
-Any questions, please contact:
-tad@gifu-u.ac.jp and zhang-jinyi@outlook.com
+Done
