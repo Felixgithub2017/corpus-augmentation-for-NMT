@@ -8,8 +8,11 @@ For word-level, we use Mecab(http://taku910.github.io/mecab/) for Japanese and j
 
 Command example with language-ja and language-zh text file in word-level:
 python3 parallelize.py -d ' ||| ' input-language-ja-file input-language-zh-file > text.ja-zh
+
 build/fast_align -i text.ja-zh -d -o -v > forward.align
+
 build/fast_align -i text.ja-zh -d -o -v -r > reverse.align
+
 build/atools -i forward.align -j reverse.align -c grow-diag-final-and > symmetric.align
 
 2. python3 jcsplit.py -m 0.5 -l log symmetrized.align input-language-ja-file input-language-zh-file output-language-ja-file output-language-zh-file -s
