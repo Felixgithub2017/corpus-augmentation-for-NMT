@@ -3,8 +3,9 @@
 Corpus augmentation by long sentences segmentation and back-translation for NMT.
 
 If you use the code, please cite this paper:
+```
 Zhang, J.; Matsumoto, T. Corpus Augmentation for Neural Machine Translation with Chinese-Japanese Parallel Corpora. Appl. Sci. 2019, 9, 2036.
-
+```
 1. use fast_align(https://github.com/clab/fast_align) to get the symmetrized.align.
 
 For word-level, we use Mecab(http://taku910.github.io/mecab/) for Japanese and jieba(https://github.com/fxsjy/jieba) for Chinese.
