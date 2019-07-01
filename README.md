@@ -36,7 +36,7 @@ For more details, please see the jcsplit.py file inside.
 4. mix segments and the generate pseudo-source sentences.
 
 ```
-python3 mix-segments.py --log_file log --source () --translated () --output () -n sentnum
+python3 mix-segments.py --log_file log --source (short) --translated () --output () -n sentnum
 ```
 
 The output file is the generated pseudo-source sentences.
@@ -44,7 +44,7 @@ The output file is the generated pseudo-source sentences.
 5. extend the target-side language sentences corresponding to the generated pseudo-source language sentences
 
 ```
-python3 mktarget.py input-language-ja-file sentnum > zh-mix-target
+python3 mktarget.py input-language-zh-file sentnum > zh-mix-target
 ```
 
 zh-mix-target is the extended target-side language sentences.
